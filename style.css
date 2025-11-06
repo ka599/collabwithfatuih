@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+body {
+    font-family: poppins;
+}
+
 
 /* navbar */
 
@@ -157,4 +161,43 @@
     max-width: 700px;
     padding-left: 30vh;
     padding-top: 10vh;
+}
+
+/* tentang kopium */
+
+.tentang-kopium {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: #F0BB79;
+}
+
+.tentang {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.tentang h2 {
+    font-weight: 800;
+    font-size: 2.3rem;
+    padding-bottom: 30px;
+}
+
+.tentang h3 {
+    font-weight: 500;
+    max-width: 1000px;
+    padding-bottom: 30px;
+}
+
+.tentang button {
+    background-color: #544226;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    color: wheat;
+}
+
+.tentang button:hover {
+    transition: 0.5ms ease-in;
+    background-color: #312616;
 }
