@@ -195,9 +195,36 @@ body {
     border: none;
     border-radius: 8px;
     color: wheat;
+    cursor: pointer;
 }
 
 .tentang button:hover {
     transition: 0.5ms ease-in;
     background-color: #312616;
+}
+
+/* testimoni */
+
+.border-testi {
+    background-color: #533914;
+    border-radius: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.testimoni-kopium {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin: 50px auto;
+    font-family: poppins;
+    font-size: 2rem;
+}
+
+.test {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: poppins;
 }
