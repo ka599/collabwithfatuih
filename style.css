@@ -247,3 +247,57 @@ body {
 .testimoni3 p {
     max-width: 400px;
 }
+
+/* mwnu */
+
+/* Styling Slider */
+
+.backgroundds {
+    background-color: #F0BB78;
+    font-family: poppins;
+}
+
+.kopium-slider {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 300px;
+    margin: 40px auto;
+}
+
+.swiper-slide {
+    /* Atur ukuran default slide */
+    width: 300px;
+    height: 300px;
+
+    /* INI KUNCINYA: Bikin pudar & kecil */
+    opacity: 0.4;
+    transform: scale(0.8);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+
+    /* (Biar gambarnya pas) */
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide-active {
+    /* INI KUNCINYA: Bikin yang tengah jadi jelas & besar */
+    opacity: 1;
+    transform: scale(3);
+}
+
+/* Styling Teks Deskripsi */
+.kopium-deskripsi {
+    text-align: center;
+    padding: 50px;
+}
+
+.deskripsi-teks {
+    display: none; /* Sembunyikan semua teks by default */
+    font-size: 2rem;
+}
+
+.deskripsi-teks.active {
+    display: block; /* Tampilkan HANYA teks yang aktif */
+}
+
+/*  */
