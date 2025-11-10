@@ -300,4 +300,113 @@ body {
     display: block; /* Tampilkan HANYA teks yang aktif */
 }
 
-/*  */
+/* footer */
+
+.footer-kopium {
+    font-family: poppins;
+    background-color: #000000;
+    color: white;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 500px;
+}
+
+.footer img{
+    width: 200px;
+    height: auto;
+}
+
+.lokasi {
+    display: flex;
+    padding-bottom: 30px    ;
+}
+
+.lokasi img {
+    width: 35px;
+    height: auto;
+    padding-right: 20px;
+}
+
+
+.lokasi2 {
+    display: flex;
+    
+}
+
+.lokasi h2 {
+    font-size: 1rem;
+}
+
+.lokasi2 h2 {
+    font-size: 1rem;
+}
+
+.lokasi2 img {
+    width: 35px;
+    height: auto;
+    padding-right: 20px;
+}
+
+.flex-footer {
+    display: flex;
+    gap: 120px;
+}
+
+.flex-footer img {
+    width: 35px;
+    height: auto;
+}
+
+.contact1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 20px;
+}
+
+.contact1  h2 {
+    padding-bottom: 20px;
+}
+
+.c2 {
+    padding-bottom: 30px;
+}
+
+.c3 {
+    padding-bottom: 30px;
+}
+
+.c4 {
+    padding-bottom: 30px;
+}
+
+.support h3 {
+    font-weight: 800;
+}
+
+.support h2 {
+    font-weight: 500;
+    padding-top: 28px;
+    padding-bottom: 30px;
+}
+
+.critic h3 {
+    font-weight: 800;
+}
+
+.critic h2 {
+    font-weight: 500;
+    padding-top: 28px;
+    padding-bottom: 30px;
+}
+
+.pooters {
+    background-color: #000000;
+    color: white;
+}
