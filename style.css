@@ -300,4 +300,30 @@ body {
     display: block; /* Tampilkan HANYA teks yang aktif */
 }
 
-/*  */
+/* footer */
+
+.footer-kopium {
+    font-family: poppins;
+    background-color: #000000;
+    color: white;
+}
+
+
+.footer{
+    display: "";
+    justify-content: center;
+}
+
+.footer img{
+    width: 200px;
+    height: auto;
+}
+
+.lokasi {
+    display: flex;
+}
+
+.lokasi img {
+    width: 35px;
+    height: auto;
+}
