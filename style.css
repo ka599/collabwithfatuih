@@ -213,12 +213,13 @@ body {
     justify-content: center;
     gap: 75px; /* Jarak antara teks & video */
     background-color: #F0BB79;
+    height: 800px;
 }
 
 /* Bagian teks */
 .tentang {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .tentang h2 {
@@ -239,11 +240,12 @@ body {
 
 .tentang button {
     background-color: #544226;
-    padding: 20px;
+    padding: 24px 35px;
     border: none;
     border-radius: 8px;
     color: wheat;
     cursor: pointer;
+    font-size: 20px;
 }
 
 .tentang button:hover {
@@ -253,8 +255,8 @@ body {
 
 
 .videow iframe {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top:210px;
+    margin-bottom: 210px;
 }
 
 /* testimoni */
@@ -264,12 +266,11 @@ body {
     border-radius: 20px;
     margin-right: 100px;
     margin-left: 100px;
+    margin-top: 200px;
+    margin-bottom: 200px;
     color: white;
 }
 
-.border-testi h2 {
-    padding-top: 30px;
-}
 
 .testimoni-kopium {
     display: flex;
@@ -286,20 +287,47 @@ body {
     text-align: center;
     color: white;
     font-family: poppins;
-    gap: 250px;
+    gap: 170px;
     padding-bottom: 60px;
 }
 
+.test h2 {
+    font-size: 24px;
+    font-family: 'poppins';
+    color: #FFF0DB;
+}
+.test h3 {
+    font-size: 24px;
+    font-family: 'poppins';
+    color: #FFF0DB;
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 17px;
+}
+
+.test .kutip {
+    padding-bottom: 32px;
+}
+
 .testimoni1 p {
-    max-width: 450px;
+    width: 360px;
+    height: 107px;
+    font-family: 'poly',serif;
+    font-size: 20px;
 }
 
 .testimoni2 p {
-    max-width: 400px;
+    width: 360px;
+    height: 107px;
+    font-family: 'poly',serif;
+    font-size: 20px;
 }
 
 .testimoni3 p {
-    max-width: 400px;
+    width: 360px;
+    height: 107px;
+    font-family: 'poly',serif;
+    font-size: 20px;
 }
 
 /* mwnu */
