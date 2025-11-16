@@ -17,6 +17,9 @@ body {
     background-color: #FFF0DB;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 /* navbar */
 
@@ -569,4 +572,28 @@ body {
 .pooters {
     margin-top: 30px;
     padding-left: 150px;
+}
+
+/* buat js */
+
+.home-kopium {
+  opacity: 0;
+  transform: translateX(30px); 
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.home-kopium.visible {
+    opacity: 1; /* Jadi kelihatan */
+    transform: translateY(0); /* Balik ke posisi normal */
+  }
+
+.story {
+opacity: 0;
+transform: translateY(30px); 
+transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.story.visible {
+    opacity: 1; /* Jadi kelihatan */
+    transform: translateY(0);
 }
