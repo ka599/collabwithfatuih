@@ -1,12 +1,1 @@
-halo aryak aing udah commit dff
-3333
-33
-33
-33
-33
-33
-33
-33
-dmfkwjdisjie2efef
-
-sjajskdjsd
+welcome to my first collab, thank for fatih i hope you guys will be fine, see you on the next project
