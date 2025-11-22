@@ -1033,3 +1033,87 @@ transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     50% { opacity: 0.5; }
 }
 
+/* Target gambar di konten story/about */
+.content-left img, .content-right img, .videow iframe {
+    border-radius: 15px; /* Sudut tumpul */
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5); /* Bayangan lembut */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Garis tipis samar */
+}
+
+.to-top {
+    background: #d4a373; /* Warna Kopi */
+    position: fixed;
+    bottom: 40px;
+    right: 110px; /* Disebelah kiri tombol WA */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 0; /* Awalnya sembunyi */
+    pointer-events: none; /* Ga bisa diklik kalau sembunyi */
+    transition: all 0.4s;
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.to-top img {
+    width: 25px;
+}
+
+/* Class ini bakal ditambahin pake JS nanti */
+.to-top.active {
+    bottom: 40px;
+    pointer-events: auto;
+    opacity: 1; /* Muncul */
+}
+
+.to-top:hover {
+    transform: translateY(-5px); /* Naik dikit pas hover */
+    background: #1a1a1a; /* Ganti warna jadi hitam */
+}
+
+
+.news-ticker {
+    width: 100%;
+    background: #d4a373; /* Warna Emas */
+    color: #000;
+    overflow: hidden;
+    padding: 8px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.ticker-wrap {
+    white-space: nowrap;
+    /* Animasi jalan terus tanpa henti */
+    animation: ticker 15s linear infinite; 
+}
+
+.ticker-item {
+    display: inline-block;
+    padding-left: 100%; /* Mulai dari luar layar kanan */
+}
+
+@keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); } /* Jalan ke kiri */
+}
+
+.progress-container {
+    width: 100%;
+    height: 5px;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 10000; /* Paling atas nutupin navbar dikit */
+}
+
+.progress-bar {
+    height: 5px;
+    background: #d4a373; /* Warna Emas Kopi */
+    width: 0%; /* Nanti diisi JS */
+    box-shadow: 0 0 10px #d4a373; /* Glowing */
+}

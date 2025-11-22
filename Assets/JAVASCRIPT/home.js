@@ -133,3 +133,46 @@ window.addEventListener("load", function() {
       loader.style.display = "none";
   }, 500);
 });
+
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+    // Kalau scroll udah lebih dari 100px ke bawah
+    if (window.scrollY > 100) {
+        toTop.classList.add("active");
+    } else {
+        toTop.classList.remove("active");
+    }
+});
+
+// easter egg
+let keys = '';
+
+window.addEventListener('keydown', (e) => {
+    keys += e.key.toUpperCase(); // Simpan ketikan user
+    
+    // Cek kalau user ngetik 'KOPI'
+    if (keys.includes('KOPI')) {
+        // Reset ketikan
+        keys = ''; 
+        
+        // Puter satu website!
+        document.body.style.transition = "transform 2s";
+        document.body.style.transform = "rotate(360deg)";
+        
+        // Balikin normal setelah muter
+        setTimeout(() => {
+            document.body.style.transform = "rotate(0deg)";
+            alert("🎉 SECRET MODE UNLOCKED: KOPIUM GACING! 🎉");
+        }, 2000);
+    }
+});
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
